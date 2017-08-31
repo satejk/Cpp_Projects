@@ -9,7 +9,8 @@ public:
     
     double length;
     double breadth;
-    double height;
+
+
     Box(void);
     ~Box(void);
     
@@ -27,20 +28,21 @@ height = 2;
   cout<<"consturctor called"<<endl;
      
 }
-
 Box::~Box(void)
 {
 
   cout<<"Destructor called"<<endl;
-     
-}
-
+    
 
 double Box::getVolume(void)
 {
     
     return (length * breadth * height);
-}
+    
+    
+};
+    
+
 
 int main(int argc, char **argv)
 {
@@ -50,6 +52,7 @@ int main(int argc, char **argv)
     Box box1;
 
     double area = 0;
+
     cout<<"Volume = "<< box1.getVolume()<<endl;
     box1.length = 2.0;
     box1.breadth = 3.0;
